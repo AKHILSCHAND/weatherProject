@@ -7,7 +7,7 @@ def home(request):
     if request.method == 'POST':
         city = request.POST.get('city').strip()  # Remove leading/trailing spaces
         if city !="":
-            api_url = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + urllib.parse.quote(city) + '&units=metric&appid=987e31fd75f978dd2df3cdf8da5552234e').read()
+            api_url = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + urllib.parse.quote(city) + '&units=metric&appid=988da5552234e').read()
             api_url_dict = json.loads(api_url)
 
             data = {
